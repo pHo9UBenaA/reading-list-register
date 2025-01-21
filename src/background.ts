@@ -6,11 +6,6 @@ chrome.action.onClicked.addListener(() => {
 
     const targetTab = tabs[0];
 
-    console.log(targetTab.title);
-    console.log(targetTab.url);
-    console.log(typeof targetTab.title);
-    console.log(typeof targetTab.url);
-
     if (targetTab !== undefined) {
       chrome.readingList.addEntry(
         {

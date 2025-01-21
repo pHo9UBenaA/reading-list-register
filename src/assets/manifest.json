@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Reading List Register",
   "short_name": "Reading List Register",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add active tab to the Reading List with shortcuts.",
   "author": "pHo9UBenaA",
   "action": {

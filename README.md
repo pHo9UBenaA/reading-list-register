@@ -1,63 +1,69 @@
-# My Deno Template
+# Reading List Register
 
-A template repository for projects using Deno.
-
-## Overview
-
-This template provides basic settings and a recommended directory structure to
-help you quickly start your Deno project.
+A Chrome extension that allows you to quickly add the active tab to your Reading
+List using keyboard shortcuts.
 
 ## Features
 
-- **Development Environment Setup**: Includes configuration files for VSCode
-  (`.vscode`) and DevContainer (`.devcontainer`) to support a smooth development
-  environment setup.
-- **Deno Configuration**: Comes with a `deno.json` file to easily manage your
-  Deno settings.
-- **GitHub Template**: This repository is set as a GitHub template, making it
-  easy to use as a base for new projects.
+- Add the current tab to Chrome's Reading List with a single click or keyboard
+  shortcut.
+- Simple activation via left-click on the extension icon or keyboard shortcut
+  (Control/Command + B).
 
-## Usage
+## Important Information
 
-1. **Create a Repository**:
-   - Use this template to create a new repository.
+1. For instructions on enabling the extension in incognito mode, see:
+   [Google Support](https://support.google.com/chrome/a/answer/13130396)
+2. If the shortcut keys do not work, go to `chrome://extensions/shortcuts` and
+   reassign the keys.
 
-2. **Install Dependencies**:
-   - Since Deno directly imports external modules, no special installation steps
-     are required.
+## Installation
 
-3. **Run Scripts**:
-   - Use the following command to run Deno scripts:
+1. Download or clone this repository
+2. Build the extension (see Development section below)
+3. Load the extension in Chrome:
+   - Navigate to `chrome://extensions/`
+   - Enable "Developer mode"
+   - Click "Load unpacked"
+   - Select the built extension directory
 
-     ```bash
-     deno run -A your_script.ts
-     ```
+## Development
 
-## Development Environment Setup
+To set up the development environment for Pin Switcher, follow these steps:
 
-- **Deprecation of DevContainer**:
-  - While this repository includes a DevContainer configuration to quickly set
-    up a development environment, it is considered **deprecated** for the
-    following reasons:
-    - **Overhead from Virtual Layers**: Using DevContainer adds extra resource
-      requirements, which can result in slower performance.
-    - **Limited Benefits**: Deno is lightweight and easy to configure, making it
-      unnecessary to rely on DevContainer for most use cases. A direct local
-      development setup is recommended for a simpler and more efficient
-      experience.
-  - You can safely remove the DevContainer configuration if it is not needed for
-    your workflow.
+1. **Clone the Repository**:
 
-## Contribution
+   ```bash
+   git clone git@github.com:pHo9UBenaA/reading-list-register.git
+   ```
 
-Contributions are welcome! Please follow these steps:
+2. **Navigate to the Project Directory**:
 
-1. Fork this repository.
-2. Create a new branch.
-3. Commit your changes.
-4. Submit a pull request.
+   ```bash
+   cd reading-list-register
+   ```
+
+3. **Build the Extension**:
+
+   ```bash
+   deno task build
+   ```
+
+4. **Load the Extension into Chrome**:
+
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable "Developer mode" using the toggle in the top right corner.
+   - Click "Load unpacked" and select the `dist` directory within your project
+     folder.
+
+## Permissions
+
+This extension requires the following permissions:
+
+- `readingList`: Required to add tabs to Chrome's Reading List
+- `tabs`: Required to access the active tab's information
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE)
-file for details.
+This project is licensed under the [MIT License](LICENSE). See the license file
+for more details.

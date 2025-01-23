@@ -19,13 +19,7 @@ List using keyboard shortcuts.
 
 ## Installation
 
-1. Download or clone this repository
-2. Build the extension (see Development section below)
-3. Load the extension in Chrome:
-   - Navigate to `chrome://extensions/`
-   - Enable "Developer mode"
-   - Click "Load unpacked"
-   - Select the built extension directory
+Install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/reading-list-register/amjohpekcdmdmlghoeannbceemhkfhng).
 
 ## Development
 

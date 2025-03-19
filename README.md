@@ -19,7 +19,8 @@ List using keyboard shortcuts.
 
 ## Installation
 
-Install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/reading-list-register/amjohpekcdmdmlghoeannbceemhkfhng).
+Install the extension from the
+[Chrome Web Store](https://chromewebstore.google.com/detail/reading-list-register/amjohpekcdmdmlghoeannbceemhkfhng).
 
 ## Development
 
